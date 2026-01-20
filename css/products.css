@@ -1,0 +1,230 @@
+/* ========================================
+   Products Page Styles
+   WordPress移行を想定したシンプルな構造
+   - メインビジュアル（共通テンプレート）
+   - コンテンツブロック（投稿で追加可能）
+   - CTA・フッター（共通テンプレート）
+   ======================================== */
+
+/* ----------------------------------------
+   Product Hero Section（メインビジュアル）
+   WordPress: タイトル + アイキャッチ画像
+   ---------------------------------------- */
+.product-hero {
+  background-color: var(--lee-light-gray);
+  padding: 50px 0 60px;
+}
+
+.product-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.product-hero__title {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--lee-blue);
+  line-height: 1.1;
+  position: relative;
+  padding-left: 25px;
+}
+
+.product-hero__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 70%;
+  background-color: var(--lee-red);
+}
+
+.product-hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-hero__img {
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+/* ----------------------------------------
+   Product Content（投稿コンテンツエリア）
+   ---------------------------------------- */
+.product-content {
+  /* 投稿コンテンツのコンテナ */
+}
+
+/* ----------------------------------------
+   Content Block（投稿で追加するブロック）
+   本国サイト参照：タイトル + 下線 + 説明文 + 画像
+   WordPress: 再利用ブロックまたはカスタムブロック
+   ---------------------------------------- */
+.content-block {
+  padding: 80px 0;
+}
+
+.content-block--gray {
+  background-color: var(--lee-light-gray);
+}
+
+.content-block__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* 画像を左に配置するバリエーション */
+.content-block--reverse .content-block__grid {
+  direction: rtl;
+}
+
+.content-block--reverse .content-block__grid > * {
+  direction: ltr;
+}
+
+/* テキストエリア */
+.content-block__text {
+  /* テキストコンテンツ */
+}
+
+.content-block__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--lee-blue);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.content-block__line {
+  width: 80px;
+  height: 3px;
+  background-color: var(--lee-red);
+  margin-bottom: 25px;
+}
+
+.content-block__text p {
+  color: var(--lee-gray);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.content-block__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* 画像エリア */
+.content-block__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lee-white);
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.content-block--gray .content-block__image {
+  background-color: var(--lee-white);
+}
+
+.content-block__image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* ----------------------------------------
+   Responsive Styles
+   ---------------------------------------- */
+@media screen and (max-width: 992px) {
+  .product-hero {
+    padding: 40px 0 50px;
+  }
+
+  .product-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .product-hero__title {
+    font-size: 48px;
+  }
+
+  .product-hero__image {
+    order: -1;
+  }
+
+  .content-block {
+    padding: 60px 0;
+  }
+
+  .content-block__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* モバイルでは画像を上に */
+  .content-block__image {
+    order: -1;
+  }
+
+  .content-block--reverse .content-block__grid {
+    direction: ltr;
+  }
+
+  .content-block__title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-hero {
+    padding: 30px 0 40px;
+  }
+
+  .product-hero__title {
+    font-size: 36px;
+    padding-left: 20px;
+  }
+
+  .product-hero__title::before {
+    width: 4px;
+  }
+
+  .content-block {
+    padding: 40px 0;
+  }
+
+  .content-block__grid {
+    gap: 30px;
+  }
+
+  .content-block__title {
+    font-size: 24px;
+  }
+
+  .content-block__line {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+
+  .content-block__text p {
+    font-size: 15px;
+  }
+
+  .content-block__image {
+    padding: 15px;
+  }
+}
