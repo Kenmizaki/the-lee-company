@@ -283,9 +283,11 @@
   opacity: 0.4;
 }
 
-.why-lee-quality__icon svg {
+.why-lee-quality__icon svg,
+.why-lee-quality__icon img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .why-lee-quality__item-title {
