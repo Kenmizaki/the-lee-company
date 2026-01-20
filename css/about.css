@@ -264,6 +264,19 @@
   margin-left: 20px;
 }
 
+.timeline-item__image {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.timeline-item__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
 .timeline-item__title {
   font-size: 20px;
   font-weight: 700;
