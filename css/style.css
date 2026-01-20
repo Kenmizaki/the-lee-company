@@ -603,8 +603,59 @@ img {
    ======================================== */
 
 .cta-section {
-  background-color: var(--footer-bg);
+  background-color: var(--lee-blue);
   padding: 80px 0;
+}
+
+/* CTA Buttons Container */
+.cta-section__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-section__btn--outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 50px;
+  padding: 0 30px;
+  background-color: transparent;
+  border: 1px solid var(--lee-white);
+  color: var(--lee-white);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all var(--transition-fast);
+}
+
+.cta-section__btn--outline:hover {
+  background-color: var(--lee-white);
+  color: var(--lee-blue);
+}
+
+.cta-section__btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 50px;
+  padding: 0 30px;
+  background-color: var(--lee-red);
+  border: 1px solid var(--lee-red);
+  color: var(--lee-white);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all var(--transition-fast);
+}
+
+.cta-section__btn--primary:hover {
+  background-color: #c70024;
+  border-color: #c70024;
 }
 
 .cta-section__content {
@@ -651,7 +702,7 @@ img {
 }
 
 .cta-section__desc-break {
-  display: none;
+  display: block;
 }
 
 /* CTA Button */
