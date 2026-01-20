@@ -1,0 +1,118 @@
+<!-- ========================================
+     The Lee Company Japan - Header Component
+     ======================================== -->
+
+<!-- Top Bar (Blue) -->
+<nav class="top-bar">
+  <a href="https://www.jupitor.co.jp/" target="_blank" rel="noopener noreferrer" class="top-bar__link">
+    <span>株式会社ジュピターコーポレーション</span>
+    <!-- Japan Flag SVG -->
+    <svg class="top-bar__flag" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+      <rect fill="#fff" width="900" height="600"/>
+      <circle fill="#bc002d" cx="450" cy="300" r="180"/>
+    </svg>
+  </a>
+  <!-- Global Site Link -->
+  <a href="https://www.theleeco.com/" target="_blank" rel="noopener noreferrer" class="top-bar__global" title="The Lee Company Global Site">
+    <svg class="top-bar__global-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+      <ellipse cx="12" cy="12" rx="4" ry="10" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 2c2.5 2.5 4 5.5 4 10s-1.5 7.5-4 10" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 2c-2.5 2.5-4 5.5-4 10s1.5 7.5 4 10" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+  </a>
+</nav>
+
+<!-- Main Header -->
+<header class="main-header">
+  <div class="container">
+    <!-- Logo -->
+    <a href="/" class="header-logo">
+      <img src="https://www.theleeco.com/uploads/2021/10/TheLeeCo_logo_Big-R.svg" alt="The Lee Company" class="header-logo__img">
+    </a>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span class="mobile-menu-toggle__line"></span>
+      <span class="mobile-menu-toggle__line"></span>
+      <span class="mobile-menu-toggle__line"></span>
+    </button>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" aria-label="メインナビゲーション">
+      <ul class="main-nav__list">
+        <!-- 製品 (Dropdown) -->
+        <li class="main-nav__item">
+          <a href="/products/" class="main-nav__link main-nav__link--has-dropdown">製品</a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a href="/products/plugs.html" class="dropdown-menu__link">プラグ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/check-valves.html" class="dropdown-menu__link">チェックバルブ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/pressure-relief-valves.html" class="dropdown-menu__link">リリーフバルブ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/shuttle-valves.html" class="dropdown-menu__link">シャトルバルブ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/flow-restrictors.html" class="dropdown-menu__link">フローレストリクター</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/flow-metering-valves.html" class="dropdown-menu__link">流量調整バルブ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/shut-off-valves.html" class="dropdown-menu__link">シャットオフバルブ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/solenoid-valves.html" class="dropdown-menu__link">ソレノイドバルブ</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/nozzles.html" class="dropdown-menu__link">ノズル</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/safety-screen-filters.html" class="dropdown-menu__link">セーフティスクリーンフィルター</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/products/pumps.html" class="dropdown-menu__link">ポンプ</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 産業 (Dropdown) -->
+        <li class="main-nav__item">
+          <a href="/industries/" class="main-nav__link main-nav__link--has-dropdown">産業</a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a href="/industries/aerospace.html" class="dropdown-menu__link">宇宙・航空</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/industries/automotive-industrial.html" class="dropdown-menu__link">自動車・一般産業</a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="/industries/medical.html" class="dropdown-menu__link">医療機器</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- The Lee Companyについて -->
+        <li class="main-nav__item">
+          <a href="/about.html" class="main-nav__link">The Lee Companyについて</a>
+        </li>
+      </ul>
+
+      <!-- Header Buttons (Inside nav for mobile) -->
+      <div class="header-buttons">
+        <a href="#" class="header-btn header-btn--outline">資料ダウンロード</a>
+        <a href="/contact.html" class="header-btn header-btn--primary">お問い合わせ</a>
+      </div>
+    </nav>
+  </div>
+</header>

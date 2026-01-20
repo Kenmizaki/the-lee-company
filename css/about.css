@@ -1,0 +1,730 @@
+/* ========================================
+   The Lee Company Japan - About Page Styles
+   ======================================== */
+
+/* ----------------------------------------
+   Hero Section
+   ---------------------------------------- */
+.about-hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.about-hero__bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 47, 108, 0.85) 0%,
+    rgba(0, 47, 108, 0.7) 50%,
+    rgba(0, 47, 108, 0.5) 100%
+  );
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero__content {
+  max-width: 700px;
+  padding: 80px 0;
+}
+
+.about-hero__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-hero__title {
+  color: var(--lee-white);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.about-hero__title--highlight {
+  color: var(--lee-red);
+}
+
+.about-hero__description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-hero__br {
+  display: block;
+}
+
+/* ----------------------------------------
+   Company Overview Section
+   ---------------------------------------- */
+.about-overview {
+  padding: 100px 0;
+  background-color: var(--lee-white);
+}
+
+.about-overview__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-overview__image {
+  position: relative;
+}
+
+.about-overview__img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.about-overview__content {
+  padding-left: 20px;
+}
+
+.about-overview__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--lee-blue);
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
+.about-overview__title--highlight {
+  color: var(--lee-red);
+}
+
+.about-overview__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--lee-gray);
+  margin-bottom: 20px;
+}
+
+.about-overview__features {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-overview__feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-overview__feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: var(--lee-red);
+  flex-shrink: 0;
+}
+
+.about-overview__feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.about-overview__feature-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--lee-blue);
+}
+
+/* ----------------------------------------
+   History Timeline Section
+   ---------------------------------------- */
+.about-history {
+  padding: 100px 0;
+  background-color: var(--lee-light-gray);
+}
+
+.about-history__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-history__subtitle {
+  color: var(--lee-red);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-history__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--lee-blue);
+  line-height: 1.3;
+}
+
+.about-history__title--highlight {
+  color: var(--lee-red);
+}
+
+/* Timeline */
+.about-history__timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-history__timeline::before {
+  content: '';
+  position: absolute;
+  left: 80px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--lee-red);
+}
+
+.timeline-item {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item__marker {
+  flex-shrink: 0;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.timeline-item__marker::after {
+  content: '';
+  position: absolute;
+  right: -24px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--lee-white);
+  border: 3px solid var(--lee-red);
+  border-radius: 50%;
+}
+
+.timeline-item__year {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--lee-red);
+  text-align: right;
+}
+
+.timeline-item__content {
+  flex: 1;
+  background-color: var(--lee-white);
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-left: 20px;
+}
+
+.timeline-item__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--lee-blue);
+  margin-bottom: 12px;
+}
+
+.timeline-item__text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lee-gray);
+}
+
+/* ----------------------------------------
+   Stats Section
+   ---------------------------------------- */
+.about-stats {
+  padding: 80px 0;
+  background-color: var(--lee-blue);
+}
+
+.about-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.about-stats__item {
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.about-stats__item::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about-stats__item:last-child::after {
+  display: none;
+}
+
+.about-stats__number {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--lee-white);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.about-stats__unit {
+  font-size: 32px;
+  color: var(--lee-red);
+}
+
+.about-stats__icon {
+  width: 48px;
+  height: 48px;
+  color: var(--lee-white);
+}
+
+.about-stats__label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--lee-white);
+  margin-bottom: 8px;
+}
+
+.about-stats__description {
+  display: block;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ----------------------------------------
+   Japan Support Section
+   ---------------------------------------- */
+.about-japan {
+  padding: 100px 0;
+  background-color: var(--lee-white);
+}
+
+.about-japan__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-japan__subtitle {
+  color: var(--lee-red);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-japan__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--lee-blue);
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
+.about-japan__title--highlight {
+  color: var(--lee-red);
+}
+
+.about-japan__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--lee-gray);
+  margin-bottom: 30px;
+}
+
+.about-japan__services {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-japan__service {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about-japan__service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--lee-light-gray);
+  border-radius: 50%;
+  flex-shrink: 0;
+  color: var(--lee-red);
+}
+
+.about-japan__service-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.about-japan__service-content {
+  flex: 1;
+}
+
+.about-japan__service-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--lee-blue);
+  margin-bottom: 5px;
+}
+
+.about-japan__service-text {
+  font-size: 14px;
+  color: var(--lee-gray);
+  line-height: 1.6;
+}
+
+.about-japan__image {
+  position: relative;
+}
+
+.about-japan__img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------------------
+   Active Nav Link
+   ---------------------------------------- */
+.main-nav__link--active {
+  color: var(--lee-blue);
+  font-weight: 500;
+}
+
+/* ----------------------------------------
+   Responsive Styles
+   ---------------------------------------- */
+@media screen and (max-width: 992px) {
+  /* Hero */
+  .about-hero {
+    min-height: 400px;
+  }
+
+  .about-hero__content {
+    padding: 60px 0;
+  }
+
+  .about-hero__title {
+    font-size: 36px;
+  }
+
+  .about-hero__description {
+    font-size: 16px;
+  }
+
+  .about-hero__br {
+    display: none;
+  }
+
+  /* Overview */
+  .about-overview {
+    padding: 70px 0;
+  }
+
+  .about-overview__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-overview__content {
+    padding-left: 0;
+    order: 2;
+  }
+
+  .about-overview__image {
+    order: 1;
+  }
+
+  .about-overview__title {
+    font-size: 30px;
+  }
+
+  /* History */
+  .about-history {
+    padding: 70px 0;
+  }
+
+  .about-history__title {
+    font-size: 30px;
+  }
+
+  .about-history__timeline::before {
+    left: 60px;
+  }
+
+  .timeline-item__marker {
+    width: 60px;
+  }
+
+  .timeline-item__year {
+    font-size: 16px;
+  }
+
+  .timeline-item__content {
+    padding: 25px;
+  }
+
+  .timeline-item__title {
+    font-size: 18px;
+  }
+
+  /* Stats */
+  .about-stats {
+    padding: 60px 0;
+  }
+
+  .about-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .about-stats__item:nth-child(2)::after {
+    display: none;
+  }
+
+  .about-stats__number {
+    font-size: 40px;
+  }
+
+  /* Japan */
+  .about-japan {
+    padding: 70px 0;
+  }
+
+  .about-japan__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-japan__title {
+    font-size: 30px;
+  }
+
+  .about-japan__image {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Hero */
+  .about-hero {
+    min-height: 350px;
+  }
+
+  .about-hero__content {
+    padding: 50px 0;
+  }
+
+  .about-hero__subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .about-hero__title {
+    font-size: 28px;
+  }
+
+  .about-hero__description {
+    font-size: 14px;
+  }
+
+  /* Overview */
+  .about-overview {
+    padding: 50px 0;
+  }
+
+  .about-overview__title {
+    font-size: 24px;
+  }
+
+  .about-overview__text {
+    font-size: 14px;
+  }
+
+  .about-overview__feature-text {
+    font-size: 14px;
+  }
+
+  /* History */
+  .about-history {
+    padding: 50px 0;
+  }
+
+  .about-history__title {
+    font-size: 24px;
+  }
+
+  .about-history__timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 40px;
+  }
+
+  .timeline-item__marker {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .timeline-item__marker::after {
+    right: auto;
+    left: -33px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-item__year {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .timeline-item__content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .timeline-item__title {
+    font-size: 16px;
+  }
+
+  .timeline-item__text {
+    font-size: 14px;
+  }
+
+  /* Stats */
+  .about-stats {
+    padding: 50px 0;
+  }
+
+  .about-stats__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .about-stats__item {
+    padding: 20px 10px;
+  }
+
+  .about-stats__item::after {
+    display: none;
+  }
+
+  .about-stats__number {
+    font-size: 32px;
+  }
+
+  .about-stats__unit {
+    font-size: 24px;
+  }
+
+  .about-stats__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .about-stats__label {
+    font-size: 14px;
+  }
+
+  .about-stats__description {
+    font-size: 11px;
+  }
+
+  /* Japan */
+  .about-japan {
+    padding: 50px 0;
+  }
+
+  .about-japan__title {
+    font-size: 24px;
+  }
+
+  .about-japan__text {
+    font-size: 14px;
+  }
+
+  .about-japan__service-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .about-japan__service-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .about-japan__service-title {
+    font-size: 15px;
+  }
+
+  .about-japan__service-text {
+    font-size: 13px;
+  }
+}

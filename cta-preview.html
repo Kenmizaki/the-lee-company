@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTA Section Preview - The Lee Company Japan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Preview Page Styles */
+    .preview-header {
+      background-color: #f8f9fa;
+      padding: 20px 30px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .preview-header h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .preview-header p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .preview-section {
+      padding: 40px 0;
+      background-color: #fff;
+    }
+
+    .preview-section__title {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .preview-divider {
+      height: 100px;
+      background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* Sample content section */
+    .sample-content {
+      padding: 60px 30px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .sample-content h2 {
+      font-size: 28px;
+      color: #002f6c;
+      margin-bottom: 20px;
+    }
+
+    .sample-content p {
+      font-size: 16px;
+      color: #545859;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preview Header -->
+  <div class="preview-header">
+    <h1>CTA Section Component Preview</h1>
+    <p>CTAセクションコンポーネントのプレビューページです。実際のページでの表示イメージを確認できます。</p>
+  </div>
+
+  <!-- Preview 1: Standalone CTA -->
+  <div class="preview-section">
+    <p class="preview-section__title">単独表示</p>
+  </div>
+
+  <!-- CTA Section Component -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__content">
+        <!-- サブタイトル -->
+        <p class="cta-section__subtitle">Lee セールスエンジニアにご相談ください</p>
+
+        <!-- メインタイトル -->
+        <h2 class="cta-section__title">
+          <span class="cta-section__title--highlight">技術的な専門知識</span>と<br class="cta-section__title-break">業界をリードする洞察力
+        </h2>
+
+        <!-- 説明文 -->
+        <p class="cta-section__description">
+          当社の専門セールスエンジニアが、お客様と直接連携し、<br class="cta-section__desc-break">
+          業界固有の知識と経験を活かして複雑なアプリケーションの課題解決をサポートいたします。
+        </p>
+
+        <!-- CTAボタン -->
+        <a href="/contact" class="cta-section__btn">
+          <span class="cta-section__btn-text">お問い合わせ</span>
+          <span class="cta-section__btn-icon">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1L19 6M19 6L14 11M19 6H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="preview-divider">コンテンツ中間での使用例</div>
+
+  <!-- Preview 2: Between Content Sections -->
+  <div class="sample-content">
+    <h2>製品について</h2>
+    <p>
+      Lee Companyは、精密流体制御コンポーネントの世界的リーダーです。
+      75年以上にわたり、航空宇宙、自動車、医療機器など様々な業界で
+      信頼性の高いソリューションを提供してきました。
+    </p>
+  </div>
+
+  <!-- CTA Section (Between Content) -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__content">
+        <p class="cta-section__subtitle">Lee セールスエンジニアにご相談ください</p>
+        <h2 class="cta-section__title">
+          <span class="cta-section__title--highlight">技術的な専門知識</span>と<br class="cta-section__title-break">業界をリードする洞察力
+        </h2>
+        <p class="cta-section__description">
+          当社の専門セールスエンジニアが、お客様と直接連携し、<br class="cta-section__desc-break">
+          業界固有の知識と経験を活かして複雑なアプリケーションの課題解決をサポートいたします。
+        </p>
+        <a href="/contact" class="cta-section__btn">
+          <span class="cta-section__btn-text">お問い合わせ</span>
+          <span class="cta-section__btn-icon">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1L19 6M19 6L14 11M19 6H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Sample Content -->
+  <div class="sample-content">
+    <h2>技術サポート</h2>
+    <p>
+      お客様の課題に最適なソリューションをご提案いたします。
+      製品選定から導入まで、専門エンジニアが一貫してサポートいたします。
+    </p>
+  </div>
+
+  <!-- Divider -->
+  <div class="preview-divider">フッター上での使用例</div>
+
+  <!-- CTA Section (Above Footer) -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__content">
+        <p class="cta-section__subtitle">Lee セールスエンジニアにご相談ください</p>
+        <h2 class="cta-section__title">
+          <span class="cta-section__title--highlight">技術的な専門知識</span>と<br class="cta-section__title-break">業界をリードする洞察力
+        </h2>
+        <p class="cta-section__description">
+          当社の専門セールスエンジニアが、お客様と直接連携し、<br class="cta-section__desc-break">
+          業界固有の知識と経験を活かして複雑なアプリケーションの課題解決をサポートいたします。
+        </p>
+        <a href="/contact" class="cta-section__btn">
+          <span class="cta-section__btn-text">お問い合わせ</span>
+          <span class="cta-section__btn-icon">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1L19 6M19 6L14 11M19 6H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+          <a href="/">
+            <img src="images/lee-logo-white.svg" alt="The Lee Company" class="footer-logo__img" onerror="this.style.display='none'">
+          </a>
+        </div>
+
+        <!-- Footer Navigation Columns -->
+        <div class="footer-nav-columns">
+          <div class="footer-column">
+            <h3 class="footer-column__title">製品情報</h3>
+            <ul class="footer-column__list">
+              <li><a href="/products/plugs">プラグ</a></li>
+              <li><a href="/products/valves">バルブ</a></li>
+              <li><a href="/products/restrictors">リストリクター</a></li>
+              <li><a href="/products/nozzles">ノズル</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-column__title">業界ソリューション</h3>
+            <ul class="footer-column__list">
+              <li><a href="/industries/aerospace">航空宇宙</a></li>
+              <li><a href="/industries/automotive">自動車</a></li>
+              <li><a href="/industries/medical">医療機器</a></li>
+              <li><a href="/industries/industrial">産業機器</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-column__title">サポート</h3>
+            <ul class="footer-column__list">
+              <li><a href="/support/technical">技術サポート</a></li>
+              <li><a href="/support/downloads">ダウンロード</a></li>
+              <li><a href="/contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom__content">
+          <a href="https://www.theleeco.com/find-distributor" class="footer-bottom__distributor-link">
+            代理店を探す
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
