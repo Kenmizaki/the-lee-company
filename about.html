@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Lee Companyは、1948年創業の微小流体制御部品のグローバルリーダーです。75年以上にわたり、宇宙・航空、自動車、医療機器など幅広い産業分野で革新的なソリューションを提供しています。">
+  <title>The Lee Companyについて | The Lee Company Japan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- ========================================
+       Header Component
+       ======================================== -->
+  <!-- Top Bar (Blue) -->
+  <nav class="top-bar">
+    <a href="https://www.jupitor.co.jp/" target="_blank" rel="noopener noreferrer" class="top-bar__link">
+      <span>株式会社ジュピターコーポレーション</span>
+      <!-- Japan Flag SVG -->
+      <svg class="top-bar__flag" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+        <rect fill="#fff" width="900" height="600"/>
+        <circle fill="#bc002d" cx="450" cy="300" r="180"/>
+      </svg>
+    </a>
+    <!-- Global Site Link -->
+    <a href="https://www.theleeco.com/" target="_blank" rel="noopener noreferrer" class="top-bar__global" title="The Lee Company Global Site">
+      <svg class="top-bar__global-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="12" cy="12" rx="4" ry="10" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 2c2.5 2.5 4 5.5 4 10s-1.5 7.5-4 10" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 2c-2.5 2.5-4 5.5-4 10s1.5 7.5 4 10" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </a>
+  </nav>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <a href="/" class="header-logo">
+        <img src="img/TheLeeCo_logo_Big-R.svg" alt="The Lee Company" class="header-logo__img">
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span class="mobile-menu-toggle__line"></span>
+        <span class="mobile-menu-toggle__line"></span>
+        <span class="mobile-menu-toggle__line"></span>
+      </button>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav" aria-label="メインナビゲーション">
+        <ul class="main-nav__list">
+          <!-- 製品 (Dropdown) -->
+          <li class="main-nav__item">
+            <a href="/products/" class="main-nav__link main-nav__link--has-dropdown">製品</a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__item">
+                  <a href="/products/plugs.html" class="dropdown-menu__link">プラグ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/check-valves.html" class="dropdown-menu__link">チェックバルブ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/pressure-relief-valves.html" class="dropdown-menu__link">リリーフバルブ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/shuttle-valves.html" class="dropdown-menu__link">シャトルバルブ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/flow-restrictors.html" class="dropdown-menu__link">フローレストリクター</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/flow-metering-valves.html" class="dropdown-menu__link">流量調整バルブ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/shut-off-valves.html" class="dropdown-menu__link">シャットオフバルブ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/solenoid-valves.html" class="dropdown-menu__link">ソレノイドバルブ</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/nozzles.html" class="dropdown-menu__link">ノズル</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/safety-screen-filters.html" class="dropdown-menu__link">セーフティスクリーンフィルター</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/products/pumps.html" class="dropdown-menu__link">ポンプ</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- 産業 (Dropdown) -->
+          <li class="main-nav__item">
+            <a href="/industries/" class="main-nav__link main-nav__link--has-dropdown">産業</a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__item">
+                  <a href="/industries/aerospace.html" class="dropdown-menu__link">宇宙・航空</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/industries/automotive-industrial.html" class="dropdown-menu__link">自動車・一般産業</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a href="/industries/medical.html" class="dropdown-menu__link">医療機器</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- The Lee Companyについて -->
+          <li class="main-nav__item">
+            <a href="/about.html" class="main-nav__link main-nav__link--active">The Lee Companyについて</a>
+          </li>
+        </ul>
+
+        <!-- Header Buttons (Inside nav for mobile) -->
+        <div class="header-buttons">
+          <a href="#" class="header-btn header-btn--outline">資料ダウンロード</a>
+          <a href="/contact.html" class="header-btn header-btn--primary">お問い合わせ</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================
+       Main Content
+       ======================================== -->
+  <main>
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="about-hero__background">
+        <img src="img/Applications-Hero.jpg" alt="The Lee Company テクノロジー" class="about-hero__bg-image">
+        <div class="about-hero__overlay"></div>
+      </div>
+      <div class="container">
+        <div class="about-hero__content">
+          <p class="about-hero__subtitle">THE LEE COMPANYについて</p>
+          <h1 class="about-hero__title">
+            <span class="about-hero__title--highlight">微小流体制御</span>の<br>
+            グローバルリーダー
+          </h1>
+          <p class="about-hero__description">
+            75年以上にわたり、世界中のお客様の流体制御の課題を<br class="about-hero__br">
+            革新的なソリューションで解決してきました。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Overview Section -->
+    <section class="about-overview">
+      <div class="container">
+        <div class="about-overview__grid">
+          <div class="about-overview__image">
+            <img src="img/1948-768x649_new.webp" alt="The Lee Company 創業時" class="about-overview__img">
+          </div>
+          <div class="about-overview__content">
+            <h2 class="about-overview__title">
+              <span class="about-overview__title--highlight">信頼</span>のエンジニアリングパートナー
+            </h2>
+            <p class="about-overview__text">
+              The Lee Companyは、宇宙・航空、自動車、医療機器など幅広い産業分野で使用される精密流体制御部品の世界的リーダーです。
+            </p>
+            <p class="about-overview__text">
+              商用ジェット機1機あたり平均4,000個以上のLee製品が使用されています。自動車、医療機器など、高い信頼性が求められる分野で、世界中の企業様にご採用いただいています。
+            </p>
+            <ul class="about-overview__features">
+              <li class="about-overview__feature">
+                <span class="about-overview__feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <span class="about-overview__feature-text">100%出荷前検査</span>
+              </li>
+              <li class="about-overview__feature">
+                <span class="about-overview__feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <span class="about-overview__feature-text">エンジニアによる技術サポート</span>
+              </li>
+              <li class="about-overview__feature">
+                <span class="about-overview__feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <span class="about-overview__feature-text">カスタム設計対応</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Original Innovators Section -->
+    <section class="why-lee-innovators">
+      <div class="container">
+        <div class="why-lee-innovators__content">
+          <p class="why-lee-innovators__subtitle">THE ORIGINAL INNOVATORS</p>
+          <h2 class="why-lee-innovators__title">
+            1948年から<span class="why-lee-innovators__title--highlight">革新的、独自、カスタム</span>の<br>
+            流体制御ソリューションを提供
+          </h2>
+          <div class="why-lee-innovators__line"></div>
+          <p class="why-lee-innovators__text">
+            The Lee Companyの最初の製品は、お客様の特定の課題を解決するために開発されたLeeプラグでした。この発明以来70年以上にわたり、私たちはお客様の課題を解決するための新しい革新的な製品を開発し続けてきました。
+          </p>
+          <p class="why-lee-innovators__text">
+            私たちは数十種類のユニークな微小流体制御製品と技術のオリジナル発明者です。これらの製品は、自動車や航空機から、病気の診断・治療に役立つ医療機器、そして宇宙空間の人工衛星まで、あらゆるところで使用されています。
+          </p>
+          <p class="why-lee-innovators__text">
+            The Lee Companyは、業界で最も困難な課題を解決することに誇りを持っています。世界中に広がるテクニカルセールスエンジニアのネットワークにより、お客様と密接に連携し、課題を理解し、チームとして解決策を見出すことができます。75年以上にわたり、業界のリーダー企業から信頼される技術パートナーとして選ばれ続けています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Quality Section -->
+    <section class="why-lee-quality">
+      <div class="container">
+        <div class="why-lee-quality__header">
+          <p class="why-lee-quality__subtitle">TRUSTED QUALITY</p>
+          <h2 class="why-lee-quality__title">
+            <span class="why-lee-quality__title--highlight">Lee製品</span>は高品質で<br>
+            実績のある信頼性
+          </h2>
+          <p class="why-lee-quality__intro">
+            私たちの微小流体制御ソリューションは、ミスが許されないアプリケーションで使用されています。
+          </p>
+          <p class="why-lee-quality__intro">
+            品質と信頼性はThe Lee Companyの象徴であり、お客様にとって最も重要な価値です。長年にわたり、高品質な製品で世界的な評価を築いてきました。厳密な公差を維持し、スペースと重量を節約する微小部品を製造する比類のない製造能力を持っています。
+          </p>
+          <p class="why-lee-quality__intro">
+            The Lee Companyの品質マネジメントシステムは、独立した監査機関からベンチマークシステムとして認められています。
+          </p>
+        </div>
+        <div class="why-lee-quality__grid">
+          <!-- Quality Item 1 -->
+          <div class="why-lee-quality__item">
+            <div class="why-lee-quality__icon">
+              <img src="img/noun-award-1659855.svg" alt="比類のない品質">
+            </div>
+            <h3 class="why-lee-quality__item-title">比類のない品質</h3>
+            <p class="why-lee-quality__item-text">
+              すべてのLee製品は厳格な認定試験を経て、出荷前に広範な受入試験に合格する必要があります。お届けするすべての製品が性能仕様を超えることを保証します。
+            </p>
+          </div>
+          <!-- Quality Item 2 -->
+          <div class="why-lee-quality__item">
+            <div class="why-lee-quality__icon">
+              <img src="img/Supplier.svg" alt="優先サプライヤー">
+            </div>
+            <h3 class="why-lee-quality__item-title">優先サプライヤー</h3>
+            <p class="why-lee-quality__item-text">
+              航空宇宙、石油・ガス、自動車、産業機器、医療など、私たちがサービスを提供するすべての業界で、主要なTier1およびTier2企業に数十年にわたり供給しています。
+            </p>
+          </div>
+          <!-- Quality Item 3 -->
+          <div class="why-lee-quality__item">
+            <div class="why-lee-quality__icon">
+              <img src="img/Solutions.svg" alt="実証済みソリューション">
+            </div>
+            <h3 class="why-lee-quality__item-title">実証済みソリューション</h3>
+            <p class="why-lee-quality__item-text">
+              The Lee Companyが開発した多くの先駆的な製品は業界標準となり、半世紀以上経った今でも使用され続けています。テスト済みで実績のあるソリューションをお届けします。
+            </p>
+          </div>
+          <!-- Quality Item 4 -->
+          <div class="why-lee-quality__item">
+            <div class="why-lee-quality__icon">
+              <img src="img/Worldwide-Support.svg" alt="ワールドワイドサポート">
+            </div>
+            <h3 class="why-lee-quality__item-title">ワールドワイドサポート</h3>
+            <p class="why-lee-quality__item-text">
+              グローバルな拠点展開により、お客様に現地でのエンジニアリングサポートを提供できます。直接販売体制により、技術的な知識を持つエンジニアがお客様と連携します。
+            </p>
+          </div>
+          <!-- Quality Item 5 -->
+          <div class="why-lee-quality__item">
+            <div class="why-lee-quality__icon">
+              <img src="img/Partner.svg" alt="経験豊富なパートナー">
+            </div>
+            <h3 class="why-lee-quality__item-title">経験豊富なパートナー</h3>
+            <p class="why-lee-quality__item-text">
+              すべてのLee製品のオリジナル発明者として、製品の動作原理と信頼性を最もよく理解しています。75年以上の経験を活かし、お客様の成功をサポートします。
+            </p>
+          </div>
+          <!-- Quality Item 6 -->
+          <div class="why-lee-quality__item">
+            <div class="why-lee-quality__icon">
+              <img src="img/Innovative-Engineering.svg" alt="革新的エンジニアリング">
+            </div>
+            <h3 class="why-lee-quality__item-title">革新的エンジニアリング</h3>
+            <p class="why-lee-quality__item-text">
+              人材と技術への投資により、継続的なイノベーションに取り組んでいます。最先端の設備と高度な技術者により、製造を自社でコントロールし、最高水準の品質を維持しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="about-stats">
+      <div class="container">
+        <div class="about-stats__grid">
+          <div class="about-stats__item">
+            <span class="about-stats__number">75<span class="about-stats__unit">+</span></span>
+            <span class="about-stats__label">年</span>
+            <span class="about-stats__description">創業以来の実績</span>
+          </div>
+          <div class="about-stats__item">
+            <span class="about-stats__number">4,000<span class="about-stats__unit">+</span></span>
+            <span class="about-stats__label">個</span>
+            <span class="about-stats__description">ジェット1機あたり</span>
+          </div>
+          <div class="about-stats__item">
+            <span class="about-stats__number">100<span class="about-stats__unit">%</span></span>
+            <span class="about-stats__label">検査</span>
+            <span class="about-stats__description">出荷前品質保証</span>
+          </div>
+          <div class="about-stats__item">
+            <span class="about-stats__number">
+              <svg class="about-stats__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="12" cy="12" rx="4" ry="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </span>
+            <span class="about-stats__label">世界展開</span>
+            <span class="about-stats__description">グローバルサポート</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Japan Support Section -->
+    <section class="about-japan">
+      <div class="container">
+        <div class="about-japan__grid">
+          <div class="about-japan__content">
+            <p class="about-japan__subtitle">日本でのサポート</p>
+            <h2 class="about-japan__title">
+              <span class="about-japan__title--highlight">日本総代理店</span>として
+            </h2>
+            <p class="about-japan__text">
+              株式会社ジュピターコーポレーションは、The Lee Companyの日本総代理店として、日本のお客様に製品の販売および技術サポートを提供しております。
+            </p>
+            <ul class="about-japan__services">
+              <li class="about-japan__service">
+                <span class="about-japan__service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="about-japan__service-content">
+                  <h4 class="about-japan__service-title">製品のご相談・お見積り</h4>
+                  <p class="about-japan__service-text">お客様のニーズに合った製品をご提案いたします。</p>
+                </div>
+              </li>
+              <li class="about-japan__service">
+                <span class="about-japan__service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="about-japan__service-content">
+                  <h4 class="about-japan__service-title">技術的なご質問への対応</h4>
+                  <p class="about-japan__service-text">専門スタッフが日本語でサポートいたします。</p>
+                </div>
+              </li>
+              <li class="about-japan__service">
+                <span class="about-japan__service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="about-japan__service-content">
+                  <h4 class="about-japan__service-title">カスタム製品のご相談</h4>
+                  <p class="about-japan__service-text">特殊な要件にも対応いたします。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about-japan__image">
+            <img src="img/2020-768x515.webp" alt="技術サポート" class="about-japan__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-section__content">
+          <!-- サブタイトル -->
+          <p class="cta-section__subtitle">セールスエンジニアにご相談ください</p>
+
+          <!-- メインタイトル -->
+          <h2 class="cta-section__title">
+            <span class="cta-section__title--highlight">技術的な専門知識</span>と<br class="cta-section__title-break">業界をリードする洞察力
+          </h2>
+
+          <!-- 説明文 -->
+          <p class="cta-section__description">
+            当社の専門セールスエンジニアが、お客様と直接連携し、<br class="cta-section__desc-break">
+            業界固有の知識と経験を活かして複雑なアプリケーションの課題解決をサポートいたします。
+          </p>
+
+          <!-- CTAボタン -->
+          <div class="cta-section__buttons">
+            <a href="#" class="cta-section__btn--outline">資料ダウンロード</a>
+            <a href="/contact.html" class="cta-section__btn--primary">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       Footer Component
+       ======================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+          <a href="/" class="footer-logo__link">
+            <img src="img/the-lee-co-full-white.svg"
+                 alt="The Lee Company"
+                 class="footer-logo__img">
+          </a>
+        </div>
+
+        <!-- Footer Navigation Columns -->
+        <div class="footer-nav-columns">
+          <!-- Products Column -->
+          <div class="footer-column">
+            <h3 class="footer-column__title">製品</h3>
+            <ul class="footer-column__list">
+              <li><a href="/products/plugs.html">プラグ</a></li>
+              <li><a href="/products/check-valves.html">チェックバルブ</a></li>
+              <li><a href="/products/pressure-relief-valves.html">リリーフバルブ</a></li>
+              <li><a href="/products/shuttle-valves.html">シャトルバルブ</a></li>
+              <li><a href="/products/flow-restrictors.html">フローレストリクター</a></li>
+              <li><a href="/products/flow-metering-valves.html">流量調整バルブ</a></li>
+              <li><a href="/products/shut-off-valves.html">シャットオフバルブ</a></li>
+              <li><a href="/products/solenoid-valves.html">ソレノイドバルブ</a></li>
+              <li><a href="/products/nozzles.html">ノズル</a></li>
+              <li><a href="/products/safety-screen-filters.html">セーフティスクリーンフィルター</a></li>
+              <li><a href="/products/pumps.html">ポンプ</a></li>
+            </ul>
+          </div>
+
+          <!-- Industries Column -->
+          <div class="footer-column">
+            <h3 class="footer-column__title">産業</h3>
+            <ul class="footer-column__list">
+              <li><a href="/industries/aerospace.html">宇宙・航空</a></li>
+              <li><a href="/industries/automotive-industrial.html">自動車・一般産業</a></li>
+              <li><a href="/industries/medical.html">医療機器</a></li>
+            </ul>
+          </div>
+
+          <!-- Company Column -->
+          <div class="footer-column">
+            <h3 class="footer-column__title">会社情報</h3>
+            <ul class="footer-column__list">
+              <li><a href="/about.html">The Lee Companyについて</a></li>
+              <li><a href="/contact.html">お問い合わせ</a></li>
+              <li><a href="#">資料ダウンロード</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__content">
+          <a href="https://www.jupiter-corp.co.jp/" target="_blank" rel="noopener noreferrer" class="footer-bottom__distributor-link">
+            日本総代理店 株式会社ジュピターコーポレーション
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      const mainNav = document.querySelector('.main-nav');
+      const dropdownItems = document.querySelectorAll('.main-nav__item');
+
+      // Mobile menu toggle
+      if (mobileToggle && mainNav) {
+        mobileToggle.addEventListener('click', function() {
+          this.classList.toggle('is-active');
+          mainNav.classList.toggle('is-active');
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !isExpanded);
+        });
+      }
+
+      // Mobile dropdown toggle
+      dropdownItems.forEach(item => {
+        const link = item.querySelector('.main-nav__link--has-dropdown');
+        if (link) {
+          link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 992) {
+              e.preventDefault();
+              item.classList.toggle('is-open');
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
