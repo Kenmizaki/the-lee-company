@@ -120,8 +120,28 @@
   margin-bottom: 20px;
 }
 
-.content-block__text p:last-child {
+.content-block__text p:last-of-type {
   margin-bottom: 0;
+}
+
+/* 対応産業タグ */
+.content-block__industry {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--lee-blue);
+  background-color: rgba(0, 60, 113, 0.08);
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* 注釈 */
+.content-block__note {
+  font-size: 13px;
+  color: var(--lee-gray);
+  font-style: italic;
+  margin-top: 10px;
 }
 
 /* 画像エリア */
